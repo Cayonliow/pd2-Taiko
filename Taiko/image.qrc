@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/First_Scene">
+        <file>Naruto1.jpg</file>
+    </qresource>
+    <qresource prefix="/StartButton">
+        <file>startbutton.jpg</file>
+    </qresource>
+    <qresource prefix="/Second_Scene">
+        <file>Naruto2.jpg</file>
+    </qresource>
+    <qresource prefix="/Drums">
+        <file>D1.png</file>
+        <file>D2.png</file>
+        <file>D3.png</file>
+        <file>D4.png</file>
+        <file>D5.png</file>
+        <file>D6.png</file>
+        <file>D7.png</file>
+    </qresource>
+    <qresource prefix="/Press_To_Start">
+        <file>Press_To_Start.jpg</file>
+    </qresource>
+    <qresource prefix="/Final">
+        <file>final.jpg</file>
+    </qresource>
+    <qresource prefix="/Restart_Button">
+        <file>restartbutton.jpg</file>
+    </qresource>
+</RCC>
