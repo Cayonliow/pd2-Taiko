@@ -40,8 +40,6 @@ MainWindow::MainWindow(QWidget *parent) :
     End= new QMediaPlayer();
     HIT= new QMediaPlayer();
 
-    MISS= new QMediaPlayer();
-
     connect(timer_to_cbg,SIGNAL(timeout()),this,SLOT(change_BG()));
     connect(timer,SIGNAL(timeout()),this,SLOT(showtime()));
     connect(timer_to_drum,SIGNAL(timeout()),this,SLOT(slide_to_left()));
@@ -51,7 +49,6 @@ MainWindow::MainWindow(QWidget *parent) :
     time_30=30;
     y=100;
     score=0;
-    click=0;
 
     ui->Score->hide();
     ui->counttimer->hide();
@@ -243,10 +240,6 @@ MainWindow::MainWindow(QWidget *parent) :
     HIT->setVolume(70);
     //HIT->play();
 
-    MISS->setMedia(QUrl("qrc:/Sound/Naruto_hit.mp3"));
-    MISS->setVolume(70);
-    //HIT->play();
-
     ui->Real_Start->setGeometry(625,400,250,100);
     QPixmap pixmap11(":/Real_Start/Press_To_Start1.png");
     QIcon ButtonIconD(pixmap11);
@@ -429,51 +422,85 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 
             if(position[2]>=250&&position[2]<=450)
             {
+                HIT->play();
                 score++;
                 position[2]=-100;
-                HIT->play();
+                /*if(position[2]==-100)
+                {
+                    HIT->stop();
+                }*/
             }
 
             if(position[4]>=250&&position[4]<=450)
             {
+                HIT->play();
                 score++;
                 position[4]=-100;
-                HIT->play();
+                /*if(position[4]==-100)
+                {
+                    HIT->stop();
+                }*/
+
             }
 
             if(position[6]>=250&&position[6]<=450)
             {
+                HIT->play();
                 score++;
                 position[6]=-100;
-                HIT->play();
+                /*if(position[6]==-100)
+                {
+                    HIT->stop();
+                }*/
+
             }
 
             if(position[8]>=800&&position[8]<=1000)
             {
+                HIT->play();
                 score++;
                 position[8]=1200;
-                HIT->play();
+                /*if(position[8]==1200)
+                {
+                    HIT->stop();
+                }*/
+
             }
 
             if(position[10]>=800&&position[10]<=1000)
             {
+                HIT->play();
                 score++;
                 position[10]=1200;
-                HIT->play();
+                /*if(position[10]==1200)
+                {
+                    HIT->stop();
+                }*/
+
             }
 
             if(position[12]>=800&&position[12]<=1000)
             {
+                HIT->play();
                 score++;
                 position[12]=1200;
-                HIT->play();
+                /*if(position[12]==1200)
+                {
+                    HIT->stop();
+                }*/
+
             }
 
             if(position[14]>=800&&position[14]<=1000)
             {
+                HIT->play();
                 score++;
                 position[14]=1200;
-                HIT->play();
+                /*(position[14]==1200)
+                {
+                    HIT->stop();
+                }*/
+
             }
        }
 
@@ -483,51 +510,86 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 
         if(position[1]>=250&&position[1]<=450)
         {
+            HIT->play();
             score++;
             position[1]=-100;
-            HIT->play();
+            /*if(position[1]==-100)
+            {
+                HIT->stop();
+            }*/
+
         }
 
         if(position[3]>=250&&position[3]<=450)
         {
+            HIT->play();
             score++;
             position[3]=-100;
-            HIT->play();
+            /*if(position[3]==-100)
+            {
+                HIT->stop();
+            }*/
+
         }
 
         if(position[5]>=250&&position[5]<=450)
         {
+            HIT->play();
             score++;
             position[5]=-100;
-            HIT->play();
+            /*if(position[5]==-100)
+            {
+                HIT->stop();
+            }*/
+
         }
 
         if(position[7]>=250&&position[7]<=450)
         {
+            HIT->play();
             score++;
             position[7]=-100;
-            HIT->play();
+            /*if(position[7]==-100)
+            {
+                HIT->stop();
+            }*/
+
         }
 
         if(position[9]>=800&&position[9]<=1000)
         {
+            HIT->play();
             score++;
             position[9]=1200;
-            HIT->play();
+            /*if(position[9]==1200)
+            {
+                HIT->stop();
+            }*/
+
         }
 
         if(position[11]>=800&&position[11]<=1000)
         {
+            HIT->play();
             score++;
             position[11]=1200;
-            HIT->play();
+            /*if(position[11]==1200)
+            {
+                HIT->stop();
+            }*/
+
         }
 
         if(position[13]>=800&&position[13]<=1000)
         {
+            HIT->play();
             score++;
             position[13]=1200;
-            HIT->play();
+            /*if(position[13]==1200)
+            {
+                HIT->stop();
+            }*/
+
         }
     }
 
@@ -847,6 +909,7 @@ void MainWindow::on_Restart_Button_clicked()
     ui->Restart_Button->hide();
     ui->Exit_Button->hide();
     ui->SCORE->hide();
+    ui->finalscore->hide();
     End->stop();
     ChooseMode->play();
     ui->back_button_2->hide();

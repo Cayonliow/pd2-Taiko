@@ -30,16 +30,15 @@ public:
     QMediaPlayer *Hard;
     QMediaPlayer *End;
     QMediaPlayer *HIT;
-    QMediaPlayer *MISS;
-    int count;
+    //int count;
     int time_30;
     int x;
     int y;
     int position[15];
     int score;
-    int click;
-    int mark;
-    int mark2;
+    //int click;
+    //int mark;
+    //int mark2;
 
     ~MainWindow();
 
