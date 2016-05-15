@@ -19,7 +19,7 @@
 #include <QMultimedia>
 
 /*constructors that every item
-(pictures,icons,sounds,musics,buttons)
+(pictures,icons,sound,music,buttons)
 are declared here*/
 
 MainWindow::MainWindow(QWidget *parent) :
