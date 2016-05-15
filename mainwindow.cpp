@@ -18,7 +18,7 @@
 #include <QMediaPlayer>
 #include <QMultimedia>
 
-/*constructors that every items
+/*constructors that every item
 (pictures,icons,sounds,musics,buttons)
 are declared here*/
 
@@ -106,7 +106,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->bigi2->hide();
 
 
-    /*set the positions of every drums randomly*/
+    /*set the positions of every drum randomly*/
     for(int i=1;i<=7;i++)
     {
         position[i]=((qrand()%11)+5)*((qrand()%800)+1)+2000;
