@@ -296,7 +296,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->back_button->hide();
     ui->back_button_2->hide();
-    ui->Pause->hide();
+
 
     ui->back_button->setGeometry(40,20,100,100);
     QPixmap pixmap19(":/Back/backbutton.png");
@@ -653,7 +653,6 @@ void MainWindow::showtime()
         Easy->stop();
         Hard->stop();
         End->play();
-        ui->Pause->hide();
 
     }
 }
@@ -832,7 +831,6 @@ void MainWindow::on_Real_Start_clicked()
     ChooseMode->stop();
     Easy->play();
     ui->back_button_2->hide();
-    ui->Pause->show();
 
     Game();
 }
@@ -846,7 +844,6 @@ void MainWindow::on_Real_Start2_clicked()
     ChooseMode->stop();
     Hard->play();
     ui->back_button_2->hide();
-    ui->Pause->show();
 
     ui->word->hide();
 

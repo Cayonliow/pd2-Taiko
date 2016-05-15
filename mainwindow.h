@@ -37,8 +37,8 @@ public:
     int position[15];
     int score;
     //int click;
-    //int mark;
-    //int mark2;
+    int mark;
+    int mark2;
 
     ~MainWindow();
 
