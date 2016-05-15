@@ -1,0 +1,81 @@
+<RCC>
+    <qresource prefix="/First_Scene">
+        <file>Naruto1.jpg</file>
+    </qresource>
+    <qresource prefix="/StartButton">
+        <file>startbutton.png</file>
+    </qresource>
+    <qresource prefix="/Press_To_Start">
+        <file>Press_To_Start_Easy.png</file>
+        <file>Press_To_Start_Hard.png</file>
+    </qresource>
+    <qresource prefix="/Second_Scene">
+        <file>Naruto2.jpg</file>
+    </qresource>
+    <qresource prefix="/Bigi">
+        <file>bigi1.png</file>
+        <file>bigi2.png</file>
+    </qresource>
+    <qresource prefix="/Drums">
+        <file>D1.png</file>
+        <file>D1s.png</file>
+        <file>D2.png</file>
+        <file>D2s.png</file>
+        <file>D3.png</file>
+        <file>D3s.png</file>
+        <file>D4.png</file>
+        <file>D4s.png</file>
+        <file>D5.png</file>
+        <file>D5s.png</file>
+        <file>D6.png</file>
+        <file>D6s.png</file>
+        <file>D7.png</file>
+        <file>D7s.png</file>
+    </qresource>
+    <qresource prefix="/Exit_Button">
+        <file>exitbutton.png</file>
+    </qresource>
+    <qresource prefix="/Face">
+        <file>face.png</file>
+        <file>face2.png</file>
+    </qresource>
+    <qresource prefix="/Final">
+        <file>1.png</file>
+    </qresource>
+    <qresource prefix="/Restart_Button">
+        <file>restartbutton.png</file>
+        <file>startbutton.png</file>
+    </qresource>
+    <qresource prefix="/Real_Start">
+        <file>Press_To_Start1.png</file>
+        <file>Press_To_Start2.png</file>
+    </qresource>
+    <qresource prefix="/Icon">
+        <file>gameicon.ico</file>
+    </qresource>
+    <qresource prefix="/Sohbi">
+        <file>sohbi1.png</file>
+        <file>sohbi2.png</file>
+        <file>sohbi3.png</file>
+        <file>sohbi4.png</file>
+    </qresource>
+    <qresource prefix="/Sound">
+        <file>Naruto_choose_mode.mp3</file>
+        <file>Naruto_Easy_mode.mp3</file>
+        <file>Naruto_endgame.mp3</file>
+        <file>Naruto_Hard_mode.mp3</file>
+        <file>Naruto_hit.mp3</file>
+        <file>Naruto_main.mp3</file>
+        <file>Naruto_miss.mp3</file>
+    </qresource>
+    <qresource prefix="/Back">
+        <file>backbutton.png</file>
+        <file>backbutton2.png</file>
+    </qresource>
+    <qresource prefix="/Pause">
+        <file>pause.png</file>
+    </qresource>
+    <qresource prefix="/Resume">
+        <file>resume.png</file>
+    </qresource>
+</RCC>
