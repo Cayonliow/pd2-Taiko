@@ -18,18 +18,18 @@
     </qresource>
     <qresource prefix="/Drums">
         <file>D1.png</file>
-        <file>D2.png</file>
-        <file>D3.png</file>
-        <file>D4.png</file>
-        <file>D5.png</file>
-        <file>D6.png</file>
-        <file>D7.png</file>
         <file>D1s.png</file>
+        <file>D2.png</file>
         <file>D2s.png</file>
+        <file>D3.png</file>
         <file>D3s.png</file>
+        <file>D4.png</file>
         <file>D4s.png</file>
+        <file>D5.png</file>
         <file>D5s.png</file>
+        <file>D6.png</file>
         <file>D6s.png</file>
+        <file>D7.png</file>
         <file>D7s.png</file>
     </qresource>
     <qresource prefix="/Exit_Button">
@@ -40,7 +40,7 @@
         <file>face2.png</file>
     </qresource>
     <qresource prefix="/Final">
-        <file>mark.png</file>
+        <file>1.png</file>
     </qresource>
     <qresource prefix="/Restart_Button">
         <file>restartbutton.png</file>
@@ -67,5 +67,15 @@
         <file>Naruto_hit.mp3</file>
         <file>Naruto_main.mp3</file>
         <file>Naruto_miss.mp3</file>
+    </qresource>
+    <qresource prefix="/Back">
+        <file>backbutton.png</file>
+        <file>backbutton2.png</file>
+    </qresource>
+    <qresource prefix="/Pause">
+        <file>pause.png</file>
+    </qresource>
+    <qresource prefix="/Resume">
+        <file>resume.png</file>
     </qresource>
 </RCC>

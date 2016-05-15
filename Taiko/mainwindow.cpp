@@ -51,6 +51,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->Score->hide();
     ui->counttimer->hide();
+    ui->word->hide();
 
     QPixmap pixmap1(":/First_Scene/Naruto1.jpg");
     ui->First_Scene->setPixmap(pixmap1);
@@ -188,9 +189,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->drum7b->setScaledContents(true);
 
 
-    QPixmap pixmap7(":/Final/mark.png");
+    QPixmap pixmap7(":/Final/1.png");
     ui->Final->setPixmap(pixmap7);
-    ui->Final->setGeometry(500,100,500,500);
+    ui->Final->setGeometry(300,100,900,500);
     ui->Final->setScaledContents(true);
     ui->Final->hide();
 
@@ -299,6 +300,42 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->back_button->hide();
     ui->back_button_2->hide();
     ui->Pause->hide();
+
+    ui->back_button->setGeometry(40,20,100,100);
+    QPixmap pixmap19(":/Back/backbutton.png");
+    QIcon ButtonIconF(pixmap19);
+    ui->back_button->setFixedSize(150,100);
+    ui->back_button->setIcon(ButtonIconF);
+    //ui->back_button->setScaledContents(true);
+    ui->back_button->setIconSize(pixmap19.rect().size());
+    //ui->Real_Start2->hide();
+
+    ui->back_button_2->setGeometry(40,20,100,100);
+    QPixmap pixmap20(":/Face/face2.png");
+    QIcon ButtonIconG(pixmap20);
+    ui->back_button_2->setFixedSize(150,100);
+    ui->back_button_2->setIcon(ButtonIconG);
+    //ui->back_button->setScaledContents(true);
+    ui->back_button_2->setIconSize(pixmap20.rect().size());
+    //ui->Real_Start2->hide();
+
+/*
+    QPixmap pixmap21(":/Pause/pause.png");
+    QIcon ButtonIconH(pixmap21);
+    ui->Pause->setFixedSize(150,100);
+    ui->Pause->setIcon(ButtonIconH);
+    ui->Pause->setIconSize(pixmap21.rect().size());
+    ui->Pause->hide();
+*/
+    ui->Resume->setGeometry(600,400,250,250);
+    QPixmap pixmap22(":/Resume/resume.png");
+    QIcon ButtonIconJ(pixmap22);
+    ui->Resume->setFixedSize(250,250);
+    ui->Resume->setIcon(ButtonIconJ);
+    //ui->Resume->setScaledContents(true);
+    ui->Resume->setIconSize(pixmap22.rect().size());
+    ui->Resume->hide();
+
 }
 
 MainWindow::~MainWindow()
@@ -435,6 +472,7 @@ void MainWindow::showtime()
         ui->Exit_Button->show();
         ui->showscore->setGeometry(500,100,400,500);
         //ui->showscore->setFixedSize(1000,1000);
+        ui->word->show();
         ui->finalscore->setText(QString::number(score));
         ui->finalscore->show();
         timer->stop();
@@ -445,6 +483,7 @@ void MainWindow::showtime()
         Easy->stop();
         Hard->stop();
         End->play();
+        ui->Pause->hide();
 
     }
 }
@@ -663,7 +702,10 @@ void MainWindow::on_Restart_Button_clicked()
     ui->SCORE->hide();
     End->stop();
     ChooseMode->play();
-    ui->back_button_2->show();
+    ui->back_button_2->hide();
+    ui->back_button->show();
+    ui->word->hide();
+
 
 }
 
@@ -712,6 +754,7 @@ void MainWindow::on_Real_Start2_clicked()
     ui->back_button_2->hide();
     ui->Pause->show();
 
+    ui->word->hide();
 
     Game2();
 }
@@ -746,17 +789,22 @@ void MainWindow::Game2()
 
 void MainWindow::on_back_button_clicked()
 {
+    ui->Second_Scene->hide();
     ui->First_Scene->show();
     ui->Start_Button->show();
+    ui->Exit_Button->setGeometry((1428/2)-200,(897/2)+100,301,148);
+    ui->finalscore->hide();
     ui->Exit_Button->show();
 
-    ui->Second_Scene->hide();
+
     ui->Press_To_Start_Easy->hide();
     ui->Press_To_Start_Hard->hide();
     ui->back_button->hide();
 
     ChooseMode->stop();
     Music->play();
+    //ui->Second_Scene->hide();
+    //ui->Exit_Button->hide();
 }
 
 void MainWindow::on_back_button_2_clicked()
@@ -776,16 +824,35 @@ void MainWindow::on_back_button_2_clicked()
     ui->Press_To_Start_Hard->show();
     ChooseMode->stop();
     ChooseMode->play();
+    ui->Exit_Button->hide();
 }
 
-void MainWindow::on_Pause_clicked()
+/*void MainWindow::on_Pause_clicked()
 {
     ui->Pause->hide();
     timer->stop();
-    timer_to_cbg = new QTimer(this);
-    timer = new QTimer(this);
-    timer_to_cbg2 = new QTimer(this);
-    timer_to_drum= new QTimer(this);
-    timer_to_drum2= new QTimer(this);
+    timer_to_cbg->stop();
+    timer->stop();
+    timer_to_cbg2->stop();
+    timer_to_drum->stop();
+    timer_to_drum2->stop();
+    ui->Final->show();
+    //Easy->stop();
+    //End->play();
+    ui->Resume->show();
 
-}
+
+}*/
+
+/*void MainWindow::on_Resume_clicked()
+{
+    ui->Resume->hide();
+    ui->Final->hide();
+    timer->start();
+    timer_to_cbg->start();
+    timer->start();
+    timer_to_cbg2->start();
+    timer_to_drum->start();
+    timer_to_drum2->start();
+
+}*/

@@ -83,8 +83,8 @@
      <rect>
       <x>40</x>
       <y>80</y>
-      <width>93</width>
-      <height>28</height>
+      <width>221</width>
+      <height>151</height>
      </rect>
     </property>
     <property name="text">
@@ -322,8 +322,8 @@
      <rect>
       <x>740</x>
       <y>440</y>
-      <width>93</width>
-      <height>28</height>
+      <width>261</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">
@@ -482,8 +482,8 @@
    <widget class="QLabel" name="finalscore">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>220</y>
+      <x>880</x>
+      <y>230</y>
       <width>291</width>
       <height>211</height>
      </rect>
@@ -686,10 +686,16 @@
      </rect>
     </property>
     <property name="text">
-     <string>back1</string>
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="back_button_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -698,21 +704,71 @@
       <height>131</height>
      </rect>
     </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
     <property name="text">
-     <string>back2</string>
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="Pause">
     <property name="geometry">
      <rect>
-      <x>1330</x>
-      <y>10</y>
+      <x>1270</x>
+      <y>30</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>Pause</string>
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Resume">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="word">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>230</y>
+      <width>331</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MisterEarl BT</family>
+      <pointsize>72</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SCORE: </string>
     </property>
    </widget>
    <zorder>sohbi3</zorder>
@@ -721,21 +777,12 @@
    <zorder>sohbi4</zorder>
    <zorder>Second_Scene</zorder>
    <zorder>First_Scene</zorder>
-   <zorder>Start_Button</zorder>
    <zorder>bigi1</zorder>
    <zorder>bigi2</zorder>
    <zorder>counttimer</zorder>
-   <zorder>Final</zorder>
-   <zorder>showscore</zorder>
    <zorder>Time</zorder>
-   <zorder>finalscore</zorder>
-   <zorder>Restart_Button</zorder>
    <zorder>Again</zorder>
-   <zorder>Press_To_Start_Easy</zorder>
-   <zorder>Press_To_Start_Hard</zorder>
    <zorder>drum3b</zorder>
-   <zorder>Score</zorder>
-   <zorder>Real_Start</zorder>
    <zorder>drum1s</zorder>
    <zorder>drum1b</zorder>
    <zorder>drum3s</zorder>
@@ -743,7 +790,6 @@
    <zorder>drum4b</zorder>
    <zorder>drum2b</zorder>
    <zorder>SCORE</zorder>
-   <zorder>Real_Start2</zorder>
    <zorder>drum7b</zorder>
    <zorder>drum6b</zorder>
    <zorder>drum5b</zorder>
@@ -751,7 +797,6 @@
    <zorder>drum7s</zorder>
    <zorder>drum4s</zorder>
    <zorder>drum6s</zorder>
-   <zorder>Exit_Button</zorder>
    <zorder>face</zorder>
    <zorder>face2</zorder>
    <zorder>cute1</zorder>
@@ -761,6 +806,19 @@
    <zorder>back_button</zorder>
    <zorder>back_button_2</zorder>
    <zorder>Pause</zorder>
+   <zorder>Final</zorder>
+   <zorder>Resume</zorder>
+   <zorder>Score</zorder>
+   <zorder>Restart_Button</zorder>
+   <zorder>showscore</zorder>
+   <zorder>finalscore</zorder>
+   <zorder>word</zorder>
+   <zorder>Press_To_Start_Hard</zorder>
+   <zorder>Press_To_Start_Easy</zorder>
+   <zorder>Start_Button</zorder>
+   <zorder>Exit_Button</zorder>
+   <zorder>Real_Start</zorder>
+   <zorder>Real_Start2</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

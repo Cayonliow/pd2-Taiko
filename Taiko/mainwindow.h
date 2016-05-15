@@ -79,7 +79,9 @@ private slots:
 
     void on_back_button_2_clicked();
 
-    void on_Pause_clicked();
+    //void on_Pause_clicked();
+
+    //void on_Resume_clicked();
 
 private:
     Ui::MainWindow *ui;
